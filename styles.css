@@ -1,0 +1,374 @@
+@font-face {
+font-family: 'Canter';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/CanterpidsSignature.woff') format('woff');
+}
+@font-face {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/Raleway-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'Fair';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/Fair.ttf') format('truetype');
+}
+-
+* {
+  margin: 0;
+  padding: 0;}
+h1{
+  color: #FFFFFF;
+  position: absolute;
+  top:30%;
+  left: 10%;
+  font-family: "Fair",sans-serif;
+  font-size: 9em;
+  font-weight: lighter;
+  transform: rotate(-4deg);
+  text-shadow: 3px 2px 5px #FFF;}
+
+h2 {
+  font-family: "Fair",sans-serif;
+  font-size: 5em;
+  padding-top: 50px;
+  text-align: center;
+  line-height: 0
+  background-color: #FFF;
+  }
+
+h3 {
+  font-family: "Fair",sans-serif;
+  font-size: 3em;}
+h5 {
+  font-family: "Raleway",sans-serif;
+  font-size: 1.5em;}
+p {
+    font-size: 18px;
+    margin-bottom: 5%;
+    margin-top:0;
+    font-family: sans-serif;
+    flex-basis: : 50%;
+    padding-bottom: 5%;
+}
+
+body {
+  background:#cccccc;
+  font-size: 1.0em;
+	line-height: 1.6;
+	font-weight: 400;
+  font-family: "Raleway",sans-serif;}
+
+.parent {
+  background: #cccccc;
+  margin: 0;
+  padding: 0;}
+
+.child-one {
+  background:#FFF;
+  position:relative;
+  margin: 100PX  150PX 50PX  150PX;
+  padding: 50 0 0 150px;
+  text-align: right;
+}
+
+.child-one h2 {
+  padding-left: 35%;}
+
+.child-one p  {
+  font-size: 1.1em;
+  margin-bottom: 5%;
+  margin-top:0;
+  font-family: sans-serif;
+  flex-basis: : 50%;
+  padding-bottom:5%;
+  padding-left: 45%;
+  padding-right: 150px;}
+
+.child-one img{
+  left: 10%;
+  position: absolute;
+  width : 30%;
+  box-shadow: 20px 20px 20px grey;
+  transform: rotate(-10deg);
+  top: 125px;
+  z-index: 9}
+
+.child-two {
+  background:#FFF;
+  position:relative;
+  margin:100PX  150PX 20PX  150PX;
+  padding: 0 150px 50px  150px;
+  text-align: center;
+  box-shadow: 10px 10px 10px grey;}
+
+.child-three {
+  background:#FFF;
+  position:relative;
+  margin:100PX 150PX 100PX 150px;
+  padding: 0 150px 50px  150px;
+  text-align: center;
+  box-shadow: 10px 10px 10px grey;}
+
+.child-three li {
+  text-align: left;}
+
+.child-four {
+  background:#FFF;
+  position:relative;
+  margin:50PX 150PX 150PX 150px;
+  padding: 0 150px 50px  150px;
+  text-align: center;
+  box-shadow: 10px 10px 10px grey;}
+
+  *{box-sizing: border-box}
+  .softskills{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 50px;
+  }
+  .skills-container{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .hardskills{
+    flex:50%;
+    padding:0 100px;
+  }
+  .container {
+     display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+  }
+  .image {
+    padding: 5px;
+    display: flex;
+    width: 75%;
+  }
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  }
+    /* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+  }
+/*WORD ROTATION STYLE-FORM*/
+
+.box {
+  position: absolute;
+  transform: translateX(=50%);
+  color: #FFF;
+  margin-left: 50px;
+  width: calc(100% - 50%);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);}
+
+.RotatingWord {
+  display: inline-block;
+  color: #ff6600;}                              /*ORANGE*/
+
+.RotatingWord span {
+  position: absolute;
+  top: 55%;
+  right: 51%;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+  opacity: 0;
+  font-size: 3em;
+  text-align: right;
+  font-family:"Raleway";
+  font-weight: bold;
+}
+                             /*WORD ROTATION FUNCTION*/
+@keyframes animate
+{
+  0%
+  {opacity: 0;transform: translateX(-50px);}
+  2%
+  {opacity: 1;transform: translateX(0px);}
+  18%
+  {opacity: 1;transform: translateX(0px);}
+  20%
+  {opacity: 0;transform: translateX(50px);}
+  100%
+  {opacity: 0;transform: translateX(50px);}
+}
+.RotatingWord span:nth-child(1)
+  { animation-delay: 0s;}
+.RotatingWord span:nth-child(2)
+  {animation-delay: 2s;}
+.RotatingWord span:nth-child(3)
+  {animation-delay: 4s;}
+.RotatingWord span:nth-child(4)
+  {animation-delay: 6s;}
+.RotatingWord span:nth-child(5)
+  {animation-delay: 8s;}
+
+
+/* Add a black background color to the top navigation */
+#header {
+  width:100%;
+  height:100vh;
+  background-image: url(images/headshot.jpg);
+  background-size: cover;
+  }
+/*MENU*/
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: #0009;
+  line-height: 50px;
+  font-family: Raleway;
+  }
+nav ul{
+  float: left;
+  margin-left: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#ff6600;             /*ORANGE*/
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding:70px;
+}
+  }
+/*SCROLL BUTTON*/
+.cta-BTN {
+    color: black;
+    border-radius: 3px;
+    border: 2px solid #f2f2f2;
+    padding: 1em 1.5em;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Raleway;
+    margin: 0 1em;
+    margin-bottom: 1em;
+    min-width: 10em;
+    transition: all .25s ease;
+    z-index: 99;
+}
+.cta-BTN:hover {
+  background-color: #b3ff66;    /*grey*/
+}
+.footer {
+  display: flex;
+ justify-content: space-between;
+z-index:99;
+}
+.footer {
+  position: fixed;
+  bottom:  0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-item {
+   background-color: #ff6600;
+   height:100px;
+   flex: 1;
+z-index:99;
+}
+.footer-one {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  padding-left: 150px;
+}
+.footer-two{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding-right: 150px;
+   font-family: Fair;
+   color: #FFF;
+   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+   font-size: 40px;
+
+}
+.footer-three {
+  flex: initial;
+  width: 300px;
+}
+
+.footer button:hover{
+background-color: #555;
+ color: white;
+}
+
+#myBtn {
+  display: flex;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  left: 88%;
+  top: 80%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff6600;                            /*ORANGE*/
+  color: #black;
+  cursor: pointer;
+  padding: 25px;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+}
+
+#myBtn:hover {
+  background-color: #FFF;
+}
+
+/*CHANGING COLOR of Social*/
+h4 {
+  -webkit-animation: colorchange 3s infinite alternate;
+}
+
+@-webkit-keyframes colorchange
+{
+  0% {
+    color: black;
+  }
+  100% {
+    color: #FFF;
+  }
+}
+
+.button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
