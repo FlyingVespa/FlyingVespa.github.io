@@ -20,6 +20,10 @@ src: url('fonts/Fair.ttf') format('truetype');
 * {
   margin: 0;
   padding: 0;}
+
+html{
+	scroll-behaviour: smooth;
+}
 h1{
   color: #FFFFFF;
   position: absolute;
