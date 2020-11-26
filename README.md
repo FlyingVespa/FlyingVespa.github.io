@@ -1,4 +1,4 @@
-# Personal-Website
+# personalpage
 Start2Impact Projct 1 personal websit with HTML CSS
 echo "# FlyingVespa.github.io" >> README.md
 git init
