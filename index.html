@@ -48,9 +48,8 @@
             and accessible. But more importantly, I have an absolute
             unwavering passion for all things creative done professionally
             and beautifully.</p>
-	       <ul id="twitter_update_list">
-			<li>Twitter feed loading</li>
-		</ul>
+	    <div id="tweets"></div>
+	    $('#tweets').tweetable({username: 'philipbeel'});
             <p>...</p>
     </div>
    
@@ -184,15 +183,7 @@
     }
     </script>
   
-	<script
-		type="text/javascript"
-		src="http://twitter.com/javascripts/blogger.js"
-	></script>
-	
-	<script
-		type="text/javascript"
-		src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=he3nel&include_rts=true&count=3&callback=twitterCallback2"
-	></script>
+<script type="text/javascript" src="jquery.tweetable.js"></script>
 
   </body>
 </html>
